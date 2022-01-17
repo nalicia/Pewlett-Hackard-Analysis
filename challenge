@@ -1,0 +1,51 @@
+SELECT ed.emp_no,
+	   ed.first_name,
+	   ed.last_name,
+	   ti.title,
+	   ti.from_date,
+	   ti.to_date
+FROM employees as ed	
+Inner JOIN titles as ti
+ON ed.emp_no = ti.emp_no
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY ed.emp_no;
+
+SELECT ri.emp_no,
+	   ri.first_name,
+	   ri.last_name,
+	   ti.title
+INTO employee_database
+FROM retirement_info as ri
+INNER JOIN titles as ti
+ON ti.emp_no = ri.emp_no
+WHERE to_date = ('9999-01-01')
+ORDER BY ri.emp_no;
+
+select * from employee_database
+
+SELECT COUNT(title), title
+--INTO retiring_titles
+FROM employee_database
+GROUP BY title
+ORDER BY COUNT(title) DESC;
+
+select * from retiring_titles
+
+
+SELECT DISTINCT ON (ed.emp_no) ed.emp_no,
+	   ed.first_name,
+	   ed.last_name,
+	   d.from_date,
+	   d.to_date,
+	   ti.title
+INTO mentorship_eligibility
+FROM employees as ed
+LEFT OUTER JOIN dept_emp as d
+ON (ed.emp_no = d.emp_no)
+LEFT OUTER JOIN titles as ti
+ON (ed.emp_no = ti.emp_no)
+WHERE (ed.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY ed.emp_no;
+
+
+SELECT * FROM retiring_titles
