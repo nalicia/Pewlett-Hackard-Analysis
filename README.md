@@ -15,12 +15,12 @@ The following is a list of the employee count for each department that may take 
 - 1,609 Technique Leaders
 - 251 Assisting engineers
 - 2 Managers
-
 <img width="216" alt="Screen Shot 2022-01-16 at 9 52 28 PM" src="https://user-images.githubusercontent.com/94723290/149705847-3dd6c477-fd43-4f55-aa34-af3b789e07e9.png">
+
+In total there are 32,578 Employees eligible for retirement. 
 
 Results for the Mentorship Program
 <img width="649" alt="Screen Shot 2022-01-16 at 11 00 48 PM" src="https://user-images.githubusercontent.com/94723290/149706172-680c00ba-3e8d-43b9-bf56-a9d80e94c501.png">
-
 ## Summary
 ### How many rolls need to be filled as the "silver tsunami" begins to make an impact?
 Since these employees can retire at any time there are 33,118 roles that need to be filled in the company.
